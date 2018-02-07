@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menu_message_table_titles">
+        <item>@string/table_item_recommend</item>
+        <item>@string/table_item_choicenss</item>
+        <item>@string/table_item_live</item>
+        <item>@string/table_item_focus</item>
+        <item>@string/table_item_music</item>
+        <item>@string/table_item_video</item>
+    </string-array>
+
+    <string-array name="menu_focus_table_titles">
+        <item>@string/table_item_focus_focus</item>
+        <item>@string/table_item_dynamic</item>
+        <item>@string/table_item_letter</item>
+    </string-array>
+</resources>

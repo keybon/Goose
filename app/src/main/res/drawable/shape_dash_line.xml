@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+
+
+    <stroke
+        android:width="@dimen/activity_margin_0.5"
+        android:color="@color/launcher_bom_text"
+        android:dashGap="@dimen/activity_margin_6"
+        android:dashWidth="@dimen/activity_margin_10" />
+
+
+</shape>

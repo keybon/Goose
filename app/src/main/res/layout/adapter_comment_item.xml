@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_margin_15"
+    android:paddingRight="@dimen/activity_margin_15"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/adapter_comment_nick"
+        style="@style/common_wrap"
+        android:textSize="@dimen/activity_textsize_15"
+        android:textColor="@color/login_edit_text"
+        android:text="@string/dialog_init_cancel"
+        />
+
+    <TextView
+        android:id="@+id/adapter_comment_content"
+        style="@style/common_wrap"
+        android:textSize="@dimen/activity_textsize_15"
+        android:minHeight="@dimen/activity_margin_50"
+        android:textColor="@color/login_edit_text"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/activity_margin_10"
+        android:text="@string/pop_protrait_photo"
+        />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/common_match_wrap"
+        android:orientation="horizontal"
+        android:background="@color/common_white"
+        >
+        <android.support.design.widget.TabLayout
+            android:id="@+id/menu_focus_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_21"
+            android:layout_marginRight="@dimen/activity_margin_21"
+            app:tabIndicatorHeight="@dimen/activity_margin_1"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabTextColor="@color/mine_common_textview"
+            app:tabSelectedTextColor="@color/mine_common_textview"
+            app:tabMode="fixed" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bottom_cutarea"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_6"
+        android:background="@color/login_cutline"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/menu_focus_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

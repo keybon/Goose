@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_margin_50"
+    android:background="@drawable/shape_bottom_line"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/single_chat_bottom_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_40"
+        android:layout_marginLeft="@dimen/activity_margin_12"
+        android:layout_marginRight="@dimen/activity_margin_20"
+        android:layout_weight="1"
+        android:background="@drawable/shape_single_bottom_bg"
+        android:hint="@string/singchat_bottom_hint"
+        android:paddingLeft="@dimen/activity_margin_5"
+        android:textColorHint="@color/launcher_bom_text" />
+
+    <TextView
+        android:id="@+id/single_chat_bottom_send"
+        android:layout_width="@dimen/activity_margin_50"
+        android:layout_height="@dimen/activity_margin_40"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/activity_margin_12"
+        android:maxLength="50"
+        android:text="@string/singchat_bottom_send"
+        android:textColor="@color/launcher_text"
+        android:textSize="@dimen/activity_textsize_15" />
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_112"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/mine_portrait"
+            android:layout_width="@dimen/activity_margin_54"
+            android:layout_height="@dimen/activity_margin_54"
+            android:layout_marginLeft="@dimen/activity_margin_15"
+            style="@style/simple_common_view"
+            />
+
+        <LinearLayout
+            android:id="@+id/menu_mine_userinfo"
+            style="@style/common_wrap"
+            android:layout_marginLeft="@dimen/activity_margin_15"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/common_wrap"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mine_user_name"
+                    style="@style/mine_username_tv"
+                    android:text="繁花似锦" />
+
+                <ImageView
+                    android:id="@+id/mine_user_compile"
+                    style="@style/common_wrap"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/activity_margin_5"
+                    android:src="@drawable/ico_write" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/common_wrap"
+                android:layout_marginTop="@dimen/activity_margin_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/mine_signature"
+                    android:text="@string/mine_signature" />
+
+                <TextView
+                    android:id="@+id/mine_sign_text"
+                    style="@style/mine_signature"
+                    android:layout_marginLeft="@dimen/activity_margin_5"
+                    android:layout_marginRight="@dimen/activity_margin_15"
+                    android:text="暂未设置" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/mine_comment"
+        style="@style/mine_layout_common"
+        >
+
+        <ImageView
+            android:id="@+id/comment_img"
+            style="@style/common_wrap"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_myreview" />
+        <TextView
+            style="@style/mine_common_textview"
+            android:layout_toRightOf="@+id/comment_img"
+            android:text="@string/mine_comment"
+            />
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageView" />
+        <TextView
+            style="@style/mine_common_cutline"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mine_send_admire"
+        style="@style/mine_layout_common"
+        >
+
+        <ImageView
+            android:id="@+id/send_admire_img"
+            style="@style/common_wrap"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_myreward"
+            />
+        <TextView
+            style="@style/mine_common_textview"
+            android:layout_toRightOf="@+id/send_admire_img"
+            android:text="@string/mine_send_admire"
+            />
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            style="@style/mine_common_cutline"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mine_reap_admire"
+        style="@style/mine_layout_common"
+        >
+
+        <ImageView
+            android:id="@+id/reap_admire_img"
+            style="@style/common_wrap"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_myreward"
+            />
+        <TextView
+            style="@style/mine_common_textview"
+            android:layout_toRightOf="@+id/reap_admire_img"
+            android:text="@string/mine_reap_admire"
+            />
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            style="@style/mine_common_cutline"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_collection"
+        style="@style/mine_layout_common"
+        >
+
+        <ImageView
+            android:id="@+id/setting_collection_img"
+            style="@style/common_wrap"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_settings"
+            />
+        <TextView
+            style="@style/mine_common_textview"
+            android:layout_toRightOf="@+id/setting_collection_img"
+            android:text="@string/mine_setting_collection"
+            />
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            style="@style/mine_common_cutline"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_setting"
+        style="@style/mine_layout_common"
+        >
+
+        <ImageView
+            android:id="@+id/setting_img"
+            style="@style/common_wrap"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_settings"
+            />
+        <TextView
+            style="@style/mine_common_textview"
+            android:layout_toRightOf="@+id/setting_img"
+            android:text="@string/mine_setting"
+            />
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            style="@style/mine_common_cutline"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

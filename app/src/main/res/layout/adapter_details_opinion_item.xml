@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/message_details_title" />
+
+    <TextView
+        android:id="@+id/adapter_details_opinion_content"
+        style="@style/common_wrap"
+        android:textColor="@color/login_edit_text"
+        android:layout_marginLeft="@dimen/activity_margin_12"
+        android:layout_marginRight="@dimen/activity_margin_12"
+        android:textSize="@dimen/activity_textsize_17"
+        android:layout_marginTop="@dimen/activity_margin_15"
+        />
+    <TextView
+        android:id="@+id/message_details_cutline"
+        style="@style/mine_common_cutline"
+        android:layout_marginTop="@dimen/activity_margin_15"
+        android:background="@color/login_cutline"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

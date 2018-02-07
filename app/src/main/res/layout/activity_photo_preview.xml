@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.emao.application.ui.photo.ViewPagerFixed
+        android:id="@+id/preview_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_margin_48"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_48"
+        android:layout_alignParentBottom="true"
+        android:background="#ee333333">
+
+        <TextView
+            android:id="@+id/preview_current_img"
+            style="@style/common_wrap"
+            android:textSize="@dimen/activity_textsize_16"
+            android:textColor="@color/common_white"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_margin_16"
+            />
+
+        <CheckBox
+            android:id="@+id/preview_checkbox"
+            android:layout_width="@dimen/activity_margin_30"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_margin_16"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/activity_textsize_16"/>
+    </RelativeLayout>
+</RelativeLayout>

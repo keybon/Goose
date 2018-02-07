@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/pay_style_wechat"
+        style="@style/mine_layout_common"
+        >
+
+        <TextView
+            style="@style/mine_common_textview"
+            android:text="微信"
+            />
+        <ImageView
+            android:id="@+id/pay_style_wechat_img"
+            style="@style/common_wrap"
+            android:src="@drawable/ico_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/pay_style_wechat_tv"
+            style="@style/common_wrap"
+            android:layout_toLeftOf="@+id/pay_style_wechat_img"
+            android:layout_marginRight="@dimen/activity_margin_12"
+            android:layout_centerVertical="true"
+            android:text="已授权"
+            />
+        <TextView
+            style="@style/mine_common_cutline"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pay_style_alipay"
+        style="@style/mine_layout_common"
+        android:visibility="gone"
+        >
+
+        <TextView
+            style="@style/mine_common_textview"
+            android:text="支付宝"
+            />
+        <ImageView
+            android:id="@+id/pay_style_alipay_img"
+            style="@style/common_wrap"
+            android:src="@drawable/ico_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/pay_style_alipay_tv"
+            style="@style/common_wrap"
+            android:layout_toLeftOf="@+id/pay_style_alipay_img"
+            android:layout_marginRight="@dimen/activity_margin_12"
+            android:layout_centerVertical="true"
+            android:text="未授权"
+            />
+        <TextView
+            style="@style/mine_common_cutline"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/common_match_wrap"
+        android:layout_toLeftOf="@+id/pay_style_alipay_img"
+        android:layout_marginRight="@dimen/activity_margin_12"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="打赏金额将在1-5个工作日内到账"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        />
+
+</LinearLayout>

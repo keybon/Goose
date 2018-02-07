@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:paddingLeft="@dimen/activity_margin_15"
+    android:paddingRight="@dimen/activity_margin_15"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/common_match_wrap"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/shape_portrait_troke"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_margin_40"
+            android:textColor="@color/launcher_text"
+            android:text="选择图片"
+            android:textSize="@dimen/activity_textsize_14"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_margin_20"
+            android:textColor="@color/launcher_text"
+            android:text="方式"
+            android:textSize="@dimen/activity_textsize_14"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/activity_margin_15"
+            />
+        <TextView
+            style="@style/common_layout_cutline"
+            android:layout_alignParentBottom="true"
+            />
+
+        <TextView
+            android:id="@+id/pop_portrait_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_45"
+            android:textColor="@color/dialog_btn_color"
+            android:text="相机"
+            android:textSize="@dimen/activity_textsize_16"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            style="@style/common_layout_cutline"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:id="@+id/pop_portrait_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_45"
+            android:textColor="@color/dialog_btn_color"
+            android:text="相册"
+            android:textSize="@dimen/activity_textsize_16"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pop_portrait_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_45"
+        android:textColor="@color/dialog_btn_color"
+        android:text="@string/dialog_init_cancel"
+        android:textSize="@dimen/activity_textsize_18"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/shape_portrait_troke"
+        android:layout_marginBottom="@dimen/activity_margin_15"
+        />
+</LinearLayout>

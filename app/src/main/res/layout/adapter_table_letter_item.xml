@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/common_white"
+    >
+
+    <TextView
+        android:id="@+id/letter_table_nickname"
+        style="@style/main_content"
+        android:layout_marginLeft="@dimen/activity_margin_15"
+        android:text="@string/dialog_init_ok"
+        />
+    <TextView
+        android:id="@+id/letter_table_count"
+        style="@style/common_wrap"
+        android:text="99"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/activity_margin_15"
+        android:paddingLeft="@dimen/activity_margin_5"
+        android:paddingRight="@dimen/activity_margin_5"
+        android:gravity="center"
+        android:textColor="@color/common_white"
+        android:background="@drawable/shape_circle_letter"
+        android:visibility="visible"
+        />
+</RelativeLayout>

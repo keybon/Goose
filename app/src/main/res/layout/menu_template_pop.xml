@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_size"
+        android:background="@color/colorAccent">
+
+        <LinearLayout
+            android:id="@+id/actionbar_back_left"
+            android:layout_width="@dimen/activity_margin_45"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_margin_12"
+            >
+            <ImageView
+                style="@style/common_wrap"
+                android:background="@drawable/ico_white_back"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            style="@style/common_layout_text"
+            android:layout_centerInParent="true"
+            android:textColor="@color/common_white"
+            android:text="@string/app_name"
+            />
+
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/template_pop_gridview"
+        style="@style/common_match_wrap"
+        android:gravity="center_vertical"
+        android:numColumns="2"
+        android:columnWidth="@dimen/activity_margin_15"
+        android:verticalSpacing="@dimen/activity_margin_15"
+        android:layout_marginLeft="@dimen/activity_margin_12"
+        android:layout_marginRight="@dimen/activity_margin_12"
+        android:layout_marginTop="@dimen/activity_margin_15"
+        android:scrollbars="none" />
+
+</LinearLayout>

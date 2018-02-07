@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/common_match_wrap"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/chatting_item_msg_time"
+        />
+
+    <LinearLayout
+        style="@style/common_match_wrap"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_bubble_right"
+            >
+
+            <TextView
+                android:id="@+id/single_chat_right_content"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_margin_40"
+                android:text="一起去吃饭！"
+                android:textColor="@color/common_white"
+                android:layout_marginRight="@dimen/activity_margin_10"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/activity_margin_10"
+                android:textSize="@dimen/activity_textsize_15"
+                />
+
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/single_chat_right_portrait"
+            android:layout_width="@dimen/activity_margin_45"
+            android:layout_height="@dimen/activity_margin_45"
+            android:layout_marginRight="@dimen/activity_margin_12"
+            style="@style/simple_common_view"
+            />
+    </LinearLayout>
+</LinearLayout>

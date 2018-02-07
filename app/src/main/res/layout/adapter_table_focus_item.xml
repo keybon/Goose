@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_margin_75"
+    android:background="@color/common_white"
+    >
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/focus_table_portrait"
+        android:layout_width="@dimen/activity_margin_45"
+        android:layout_height="@dimen/activity_margin_45"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_margin_15"
+        style="@style/simple_common_view"
+        />
+    <TextView
+        android:id="@+id/focus_table_nickname"
+        style="@style/common_wrap"
+        android:textSize="@dimen/activity_textsize_15"
+        android:textColor="@color/login_edit_text"
+        android:text="@string/dialog_init_ok"
+        android:layout_toRightOf="@+id/focus_table_portrait"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_margin_20"
+        />
+
+    <Button
+        android:id="@+id/focus_table_attention"
+        android:layout_width="@dimen/activity_margin_70"
+        android:layout_height="@dimen/activity_margin_24"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_margin_15"
+        android:text="取消关注"
+        android:background="@drawable/shape_coner_accent" />
+</RelativeLayout>

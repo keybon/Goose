@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="@dimen/activity_margin_5" />
+
+    <stroke
+        android:width="@dimen/activity_margin_1"
+        android:color="@color/wechat_login_text" />
+
+    <solid android:color="@color/login_cutline"/>
+
+</shape>

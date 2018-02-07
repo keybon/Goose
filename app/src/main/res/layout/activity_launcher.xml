@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/launcher_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="simple_common_view"
+        />
+
+    <TextView
+        android:id="@+id/launcher_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/activity_margin_30"
+        android:paddingTop="@dimen/activity_margin_30"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_textsize_16"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_165"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/openpage"
+            />
+        <TextView
+            android:id="@+id/launcher_hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_textsize_18"
+            android:layout_marginTop="@dimen/activity_margin_20"
+            android:textColor="@color/launcher_text"
+            android:text="@string/launcher_mid_hint"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_margin_15"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_textsize_15"
+            android:textColor="@color/launcher_bom_text"
+            android:text="@string/launcher_bottom_hint"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_textsize_15"
+            android:textColor="@color/launcher_bom_text"
+            android:text="@string/launcher_bottom_hint_"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

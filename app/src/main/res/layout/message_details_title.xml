@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_friend_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_margin_15"
+    android:paddingLeft="@dimen/activity_margin_12"
+    android:background="@color/common_white"
+    android:paddingRight="@dimen/activity_margin_12">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/message_friend_portrait"
+        style="@style/simple_common_view"
+        android:layout_width="@dimen/activity_margin_45"
+        android:layout_height="@dimen/activity_margin_45"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/message_friend_nickname"
+        style="@style/common_wrap"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/message_friend_portrait"
+        android:text="致我们单纯的小美好"
+        android:textColor="@color/dialog_btn_color"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/activity_margin_15"
+        android:textSize="@dimen/activity_textsize_16" />
+
+    <TextView
+        android:id="@+id/message_friend_time"
+        style="@style/common_wrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/activity_margin_15"
+        android:text="刚刚"
+        android:textColor="@color/myinfo_cutline" />
+
+</RelativeLayout>

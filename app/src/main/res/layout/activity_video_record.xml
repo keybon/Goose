@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/video_rl"
+        style="@style/common_match_match"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/activity_margin_159">
+
+        <SurfaceView
+            android:id="@+id/video_surfaceview"
+            style="@style/common_match_match"
+            />
+        <ImageView
+            android:id="@+id/video_record_focus"
+            style="@style/common_wrap"
+            android:src="@drawable/ico_focusingpic"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_159"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        >
+        <ProgressBar
+            android:id="@+id/video_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_6"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/drawable_progress"
+            />
+        <ImageView
+            android:id="@+id/video_record_deletet"
+            android:layout_height="@dimen/activity_margin_36"
+            android:layout_width="@dimen/activity_margin_36"
+            android:src="@drawable/ico_delete"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/activity_margin_30"
+            android:layout_centerVertical="true"
+            />
+        <com.emao.application.ui.view.LongTouchBtn
+            android:id="@+id/video_record_start"
+            android:layout_width="@dimen/activity_margin_63"
+            android:layout_height="@dimen/activity_margin_63"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ico_shooting_act"
+            />
+        <ImageView
+            android:id="@+id/video_record_sure"
+            android:layout_height="@dimen/activity_margin_36"
+            android:layout_width="@dimen/activity_margin_36"
+            android:src="@drawable/ico_finished"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_margin_30"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

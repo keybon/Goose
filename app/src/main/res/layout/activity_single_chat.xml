@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/common_match_match"
+    android:background="@color/common_white">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/single_chat_recyclerview"
+        style="@style/common_match_match"
+        android:layout_marginBottom="@dimen/activity_margin_50"
+        android:paddingTop="@dimen/activity_margin_10"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        style="@style/common_match_wrap"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <include
+            layout="@layout/layout_singchat_bottom" />
+    </LinearLayout>
+
+</RelativeLayout>

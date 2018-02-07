@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_size"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/actionbar_back_left"
+        android:layout_width="@dimen/activity_margin_45"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+        <ImageView
+            style="@style/common_wrap"
+            android:background="@drawable/ico_white_back"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/actionbar_title"
+        style="@style/common_layout_text"
+        android:layout_centerInParent="true"
+        android:textColor="@color/common_white"
+        android:text="@string/app_name"
+        />
+
+    <LinearLayout
+        android:id="@+id/actionbar_back_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            style="@style/common_wrap"
+            android:background="@drawable/ico_write"
+            android:visibility="visible"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/actionbar_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            style="@style/common_wrap"
+            android:background="@drawable/icon_right_point"
+            android:visibility="visible"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/actionbar_back_video_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/video_flashlight"
+            style="@style/common_wrap"
+            android:background="@drawable/ico_flashlight"
+            android:layout_marginLeft="@dimen/activity_margin_12"
+            android:layout_marginRight="@dimen/activity_margin_12"
+            />
+        <ImageView
+            android:id="@+id/video_camera_turn"
+            style="@style/common_wrap"
+            android:background="@drawable/ico_turncamera"
+            android:layout_marginLeft="@dimen/activity_margin_15"
+            android:layout_marginRight="@dimen/activity_margin_15"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/actionbar_text_right"
+        style="@style/actionbar_text_right"
+        android:text="提交"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

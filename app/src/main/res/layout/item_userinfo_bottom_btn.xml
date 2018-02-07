@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_margin_60"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom"
+    >
+
+    <LinearLayout
+        android:id="@+id/userinfo_bottom_comment_ll"
+        android:layout_height="match_parent"
+        android:layout_width="@dimen/activity_margin_0"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_like" />
+
+        <TextView
+            android:id="@+id/message_friend_comment"
+            style="@style/common_wrap"
+            android:layout_marginLeft="@dimen/activity_margin_5"
+            android:text="@string/actionbar_focus"
+            android:textColor="@color/selector_table_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userinfo_bottom_opinion_ll"
+        android:layout_height="match_parent"
+        android:layout_width="@dimen/activity_margin_0"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_message" />
+
+        <TextView
+            android:id="@+id/message_friend_opinion"
+            style="@style/common_wrap"
+            android:layout_marginLeft="@dimen/activity_margin_5"
+            android:text="@string/table_item_letter"
+            android:textColor="@color/selector_table_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userinfo_bottom_admire_ll"
+        android:layout_height="match_parent"
+        android:layout_width="@dimen/activity_margin_0"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_myreward"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/message_friend_admire"
+            style="@style/common_wrap"
+            android:layout_marginLeft="@dimen/activity_margin_5"
+            android:text="@string/userinfo_bottom_report"
+            android:textColor="@color/selector_table_color" />
+    </LinearLayout>
+
+
+</LinearLayout>

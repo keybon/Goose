@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_alph_black"
+    android:paddingLeft="@dimen/activity_margin_45"
+    android:paddingRight="@dimen/activity_margin_45"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/pop_admire_ll"
+        style="@style/common_match_wrap"
+        android:background="@drawable/shape_coner_white"
+        android:gravity="center_horizontal"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_110"
+            android:background="@drawable/shape_coner_gray"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/pop_admire_portrait"
+                android:layout_width="@dimen/activity_margin_54"
+                android:layout_height="@dimen/activity_margin_54"
+                android:layout_marginTop="@dimen/activity_margin_21"
+                style="@style/simple_common_view"
+                />
+
+            <TextView
+                android:id="@+id/pop_admrie_nickname"
+                style="@style/common_wrap"
+                android:text="@string/pop_protrait_photo"
+                android:textColor="@color/myinfo_cutline"
+                android:textSize="@dimen/activity_textsize_14" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_54"
+            android:gravity="center"
+            android:text="@string/pop_admire_hint"
+            android:textColor="@color/launcher_bom_text"
+            android:textSize="@dimen/activity_textsize_14" />
+
+        <LinearLayout
+            style="@style/common_match_wrap"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/activity_margin_0"
+                android:layout_height="@dimen/activity_margin_1"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/login_cutline" />
+
+            <ImageView
+                android:layout_width="@dimen/activity_margin_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/ico_money" />
+
+            <TextView
+                android:layout_width="@dimen/activity_margin_0"
+                android:layout_height="@dimen/activity_margin_1"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/login_cutline" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/pop_money_r1"
+            style="@style/common_match_wrap"
+            android:layout_marginTop="@dimen/activity_margin_24"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/bt1"
+                style="@style/pop_admire_money_bt"
+                android:text="@string/pop_admire_money_1" />
+
+            <RadioButton
+                android:id="@+id/bt2"
+                style="@style/pop_admire_money_bt"
+                android:layout_marginLeft="@dimen/activity_margin_14"
+                android:text="@string/pop_admire_money_2" />
+
+            <RadioButton
+                android:id="@+id/bt3"
+                style="@style/pop_admire_money_bt"
+                android:layout_marginLeft="@dimen/activity_margin_14"
+                android:text="@string/pop_admire_money_3" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/pop_money_r2"
+            style="@style/common_match_wrap"
+            android:layout_marginTop="@dimen/activity_margin_14"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/bt4"
+                style="@style/pop_admire_money_bt"
+                android:text="@string/pop_admire_money_4" />
+
+            <RadioButton
+                android:id="@+id/bt5"
+                style="@style/pop_admire_money_bt"
+                android:layout_marginLeft="@dimen/activity_margin_14"
+                android:text="@string/pop_admire_money_5" />
+
+            <RadioButton
+                android:id="@+id/bt6"
+                style="@style/pop_admire_money_bt"
+                android:layout_marginLeft="@dimen/activity_margin_14"
+                android:text="@string/pop_admire_money_6" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="@dimen/activity_margin_226"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_18"
+            android:layerType="software"
+            android:background="@drawable/shape_dash_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_45"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/common_wrap"
+                android:text="@string/pop_admire_money_"
+                android:textColor="@color/dialog_btn_color"
+                android:textSize="@dimen/activity_margin_12" />
+
+            <EditText
+                android:id="@+id/pop_admire_press_money"
+                android:layout_width="@dimen/activity_margin_66"
+                android:layout_height="@dimen/activity_margin_24"
+                android:layout_marginLeft="@dimen/activity_margin_5"
+                android:inputType="number"
+                android:background="@color/common_white" />
+
+            <TextView
+                style="@style/common_wrap"
+                android:layout_marginLeft="@dimen/activity_margin_5"
+                android:text="@string/admire_money_count"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/activity_margin_12" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pop_admire_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_42"
+            android:background="@drawable/shape_pop_admire_btn"
+            android:text="@string/pop_admire_bt"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/activity_textsize_16" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pop_admire_close"
+        style="@style/common_wrap"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_margin_24"
+        android:scaleType="center"
+        android:src="@drawable/ico_closereward" />
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/common_match_wrap"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/common_bottom_cutline"
+        style="@style/common_layout_cutline"
+        android:layout_marginTop="@dimen/activity_margin_15"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_45"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/message_friend_comment_ll"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/activity_margin_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/common_wrap"
+                android:src="@drawable/selector_table_message_bottom_admire_img" />
+
+            <TextView
+                android:id="@+id/message_friend_comment"
+                style="@style/common_wrap"
+                android:layout_marginLeft="@dimen/activity_margin_5"
+                android:text="20万"
+                android:textColor="@color/selector_table_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/message_friend_opinion_ll"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/activity_margin_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/common_wrap"
+                android:src="@drawable/selector_table_message_bottom_opinion_img" />
+
+            <TextView
+                android:id="@+id/message_friend_opinion"
+                style="@style/common_wrap"
+                android:layout_marginLeft="@dimen/activity_margin_5"
+                android:text="20万"
+                android:textColor="@color/selector_table_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/message_friend_admire_ll"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/activity_margin_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/common_wrap"
+                android:src="@drawable/selector_table_message_bottom_reward_img" />
+
+            <TextView
+                android:id="@+id/message_friend_admire"
+                style="@style/common_wrap"
+                android:layout_marginLeft="@dimen/activity_margin_5"
+                android:text="打赏"
+                android:textColor="@color/selector_table_color" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

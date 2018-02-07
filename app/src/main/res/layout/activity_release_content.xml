@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/release_ll"
+        style="@style/common_match_match"
+        android:background="@color/common_white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_margin_15"
+        android:paddingRight="@dimen/activity_margin_15">
+
+        <LinearLayout
+            style="@style/common_match_wrap"
+            android:layout_marginTop="@dimen/activity_margin_15"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/common_wrap"
+                android:text="@string/picture_content"
+                android:textColor="@color/login_edit_text"
+                android:textSize="@dimen/activity_textsize_16" />
+
+            <TextView
+                android:id="@+id/picture_num_text"
+                style="@style/common_match_wrap"
+                android:gravity="right"
+                android:text="@string/picture_init_text"
+                android:textColor="@color/wechat_login_text"
+                android:textSize="@dimen/activity_textsize_15" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/picture_wish_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_15"
+            android:background="@color/common_white"
+            android:hint="@string/picture_edit_hint"
+            android:textColorHint="@color/launcher_bom_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_1"
+            android:layout_marginTop="@dimen/activity_margin_12"
+            android:background="@drawable/shape_dash_line"
+            android:layerType="software" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/picture_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_margin_66"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/release_video_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_250"
+            android:layout_marginTop="@dimen/activity_margin_66"
+            android:background="@color/common_black"
+            android:visibility="visible">
+
+            <cn.jzvd.JZVideoPlayerStandard
+                android:id="@+id/release_videoplayer"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/release_video_play"
+                android:layout_width="@dimen/activity_margin_36"
+                android:layout_height="@dimen/activity_margin_36"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ico_play"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/release_video_play_tv"
+                style="@style/common_wrap"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/activity_margin_10"
+                android:src="@drawable/ico_play"
+                android:text="点击重新录制"
+                android:textColor="@color/common_white"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+        <com.emao.application.ui.view.LabelsView
+
+            android:id="@+id/release_labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="25dp"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/activity_margin_15"
+            app:labelBackground="@drawable/selector_radio_release"
+            app:labelTextColor="@drawable/label_text_color"
+            app:labelTextPaddingBottom="5dp"
+            app:labelTextPaddingLeft="10dp"
+            app:labelTextPaddingRight="10dp"
+            app:labelTextPaddingTop="5dp"
+            app:labelTextSize="14sp"
+            app:lineMargin="10dp"
+            app:maxSelect="0"
+            app:selectType="SINGLE"
+            app:wordMargin="10dp"
+
+
+            />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

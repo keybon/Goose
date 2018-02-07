@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white">
+
+    <include
+        android:id="@+id/mobile_title"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:layout_below="@+id/mobile_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_6"
+            android:background="@color/login_cutbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/sms"
+                style="@style/Login_Mobile_img"
+                android:src="@drawable/ico_telepone"
+
+                />
+
+            <com.emao.application.ui.view.ClearableEditText
+                android:id="@+id/mobile_phone_num"
+                style="@style/Login_Mobile_EditText"
+                android:layout_marginLeft="@dimen/activity_margin_5"
+                android:layout_toLeftOf="@+id/mobile_verifycode_btn"
+                android:layout_toRightOf="@+id/sms"
+                android:background="@drawable/shape_login_edit"
+                android:drawableRight="@drawable/edittext_del_icon"
+                android:hint="@string/login_mobile"
+                android:inputType="number"
+                android:maxLength="11"></com.emao.application.ui.view.ClearableEditText>
+
+            <TextView
+                android:id="@+id/mobile_verifycode_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_margin_60"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shape_login_edit"
+                android:gravity="center"
+                android:text="@string/login_mobile_send_verifycode"
+                android:textColor="@color/login_verifycode"
+                android:textSize="@dimen/activity_textsize_14" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white">
+
+            <ImageView
+                android:id="@+id/nation_code"
+                style="@style/Login_Mobile_img"
+                android:src="@drawable/ico_code" />
+
+            <com.emao.application.ui.view.ClearableEditText
+                android:id="@+id/mobile_verifycode"
+                style="@style/Login_Mobile_EditText"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/activity_margin_15"
+                android:layout_toRightOf="@+id/nation_code"
+                android:background="@drawable/shape_login_edit"
+                android:drawableRight="@drawable/edittext_del_icon"
+                android:hint="@string/login_verifycode"
+                android:inputType="number"
+                android:maxLength="5"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/mobile_login_button"
+        style="@style/common_wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_margin_170"
+        android:background="@drawable/ico_login_act" />
+</RelativeLayout>

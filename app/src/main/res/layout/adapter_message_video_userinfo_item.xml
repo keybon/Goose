@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/common_match_wrap"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_onclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/message_details_title" />
+
+        <TextView
+            android:id="@+id/message_friend_content"
+            style="@style/common_wrap"
+            android:layout_marginLeft="@dimen/activity_margin_12"
+            android:layout_marginRight="@dimen/activity_margin_12"
+            android:layout_marginTop="@dimen/activity_margin_15"
+            android:textColor="@color/login_edit_text"
+            android:textSize="@dimen/activity_textsize_17" />
+
+        <cn.jzvd.JZVideoPlayerStandard
+            android:id="@+id/message_userinfo_videoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/activity_margin_15"
+            android:paddingLeft="@dimen/activity_margin_12"
+            android:paddingRight="@dimen/activity_margin_12"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/item_bottom_btn" />
+
+    <TextView
+        android:id="@+id/bottom_cutarea"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_5"
+        android:background="@color/bottom_btn" />
+
+</LinearLayout>

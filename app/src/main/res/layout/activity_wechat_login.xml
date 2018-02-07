@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_layout" />
+
+
+    <LinearLayout
+        style="@style/common_wrap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_margin_100"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_logo" />
+
+        <TextView
+            style="@style/common_wrap"
+            android:layout_marginTop="@dimen/activity_margin_15"
+            android:text="@string/app_name"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/activity_textsize_20" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/common_match_wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_margin_150"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/wechat_login"
+            style="@style/common_wrap"
+            android:layout_gravity="center"
+            android:background="@drawable/loginwechat_act" />
+
+        <TextView
+            style="@style/common_wrap"
+            android:text="@string/login_wechat_hint"
+            android:textColor="@color/wechat_login_text"
+            android:textSize="@dimen/activity_textsize_16" />
+    </LinearLayout>
+
+</RelativeLayout>

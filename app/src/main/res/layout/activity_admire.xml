@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        style="@style/common_match_wrap">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_130"
+            android:src="@drawable/moneybg"
+            android:scaleType="fitXY"
+            />
+        <LinearLayout
+            style="@style/common_wrap"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/activity_margin_30"
+            >
+            <TextView
+                android:id="@+id/admire_direction"
+                style="@style/common_wrap"
+                android:textColor="@color/common_white"
+                android:textSize="@dimen/activity_textsize_16"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/admire_hint"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:textColor="@color/login_edit_text"
+        android:textSize="@dimen/activity_textsize_16"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_margin_15"
+        android:visibility="gone"
+        />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/admire_smart_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePreviewInEditMode="true"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/admire_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

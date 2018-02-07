@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        style="@style/common_match_match"
+        android:layout_marginBottom="@dimen/activity_margin_50"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/content_details_activity"
+            style="@style/common_match_wrap"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <FrameLayout
+                style="@style/common_match_wrap"
+                android:background="@color/common_white">
+
+                <ImageView
+                    android:id="@+id/content_details_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:visibility="visible" />
+
+                <!--<include layout="@layout/message_details_title" />-->
+                <LinearLayout
+                    android:id="@+id/content_details_title_ll"
+                    style="@style/common_match_wrap"
+                    android:orientation="vertical">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/userinfo_activity_portrait"
+                        style="@style/simple_common_view_boder"
+                        android:layout_width="@dimen/activity_margin_60"
+                        android:layout_height="@dimen/activity_margin_60"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/activity_margin_60" />
+
+                    <TextView
+                        android:id="@+id/userinfo_activity_nickname"
+                        style="@style/common_wrap"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/activity_margin_12"
+                        android:text="@string/dialog_nickname_edit"
+                        android:textColor="@color/common_white"
+                        android:textSize="@dimen/activity_textsize_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/userinfo_activity_signature"
+                        style="@style/common_match_wrap"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/activity_margin_12"
+                        android:layout_marginLeft="@dimen/activity_margin_30"
+                        android:layout_marginRight="@dimen/activity_margin_30"
+                        android:layout_marginTop="@dimen/activity_margin_12"
+                        android:text="@string/myinfo_signture"
+                        android:textColor="@color/common_white"
+                        android:gravity="center"
+                        android:textSize="@dimen/activity_textsize_14" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants">
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/content_details_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_margin_12"
+                            android:layout_marginRight="@dimen/activity_margin_12"
+                            android:layout_marginTop="@dimen/activity_margin_15"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <LinearLayout
+                style="@style/common_match_wrap"
+                android:background="@color/common_white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/content_details_cutline"
+                    style="@style/mine_common_cutline"
+                    android:layout_marginTop="@dimen/activity_margin_15"
+                    android:background="@color/login_cutline" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/common_match_wrap"
+                android:layout_marginBottom="@dimen/activity_margin_50"
+                android:layout_marginLeft="@dimen/activity_margin_12"
+                android:layout_marginRight="@dimen/activity_margin_12"
+                android:layout_marginTop="@dimen/activity_margin_15"
+                android:background="@color/common_white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    style="@style/common_match_wrap"
+                    android:layout_marginTop="@dimen/activity_margin_21"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/common_wrap"
+                        android:layout_marginLeft="@dimen/activity_margin_12"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:src="@drawable/ico_like" />
+
+                    <com.emao.application.ui.view.GooseGridView
+                        android:id="@+id/content_details_admire_gridview"
+                        style="@style/common_match_wrap"
+                        android:layout_marginLeft="@dimen/activity_margin_12"
+                        android:columnWidth="@dimen/activity_margin_15"
+                        android:gravity="center_vertical"
+                        android:numColumns="8"
+                        android:scrollbars="none"
+                        android:verticalSpacing="@dimen/activity_margin_15" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/mine_common_cutline"
+                    android:layout_marginTop="@dimen/activity_margin_15"
+                    android:background="@color/login_cutline" />
+
+                <LinearLayout
+                    style="@style/common_match_wrap"
+                    android:layout_marginTop="@dimen/activity_margin_6"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/common_wrap"
+                        android:layout_marginLeft="@dimen/activity_margin_12"
+                        android:layout_marginTop="@dimen/activity_margin_25"
+                        android:src="@drawable/ico_review" />
+
+                    <RelativeLayout
+                        android:id="@+id/content_details_opinion_empty"
+                        style="@style/common_match_match"
+                        android:visibility="visible"
+                        >
+
+                        <TextView
+                            style="@style/common_wrap"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/activity_margin_20"
+                            android:text="留下您的评论吧～"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/content_details_opinion_recycler"
+                            style="@style/common_match_wrap"
+                            android:visibility="gone"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/mine_common_cutline"
+                    android:layout_marginTop="@dimen/activity_margin_15"
+                    android:background="@color/login_cutline" />
+
+                <LinearLayout
+                    style="@style/common_match_wrap"
+                    android:layout_marginTop="@dimen/activity_margin_6"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/common_wrap"
+                        android:layout_marginLeft="@dimen/activity_margin_12"
+                        android:layout_marginTop="@dimen/activity_margin_25"
+                        android:src="@drawable/ico_reward" />
+
+                    <RelativeLayout
+                        android:id="@+id/content_details_reward_empty"
+                        style="@style/common_match_match"
+                        android:visibility="visible"
+                        >
+
+                        <TextView
+                            style="@style/common_wrap"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/activity_margin_20"
+                            android:text="支持就请打赏吧～"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/content_details_reward_recycler"
+                            style="@style/common_match_wrap"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/mine_common_cutline"
+                    android:layout_marginTop="@dimen/activity_margin_15"
+                    android:background="@color/common_white" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        style="@style/common_match_wrap"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_white">
+
+        <include
+            android:id="@+id/content_details_bottom_btn"
+            layout="@layout/item_bottom_btn" />
+
+        <include
+            android:id="@+id/content_details_bottom_send"
+            layout="@layout/layout_singchat_bottom"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

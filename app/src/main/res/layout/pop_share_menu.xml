@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    >
+
+    <LinearLayout
+        style="@style/common_match_wrap"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/login_cutline"
+        >
+
+        <TextView
+            style="@style/common_wrap"
+            android:textSize="@dimen/activity_textsize_16"
+            android:textColor="@color/launcher_text"
+            android:text="@string/pop_share_menu_title"
+            android:layout_marginLeft="@dimen/activity_margin_12"
+            android:layout_marginTop="@dimen/activity_margin_25"
+            />
+
+        <LinearLayout
+            style="@style/common_match_wrap"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_margin_25"
+            >
+
+            <LinearLayout
+                android:id="@+id/pop_share_qq"
+                style="@style/common_wrap"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_margin_54"
+                    android:layout_height="@dimen/activity_margin_54"
+                    android:src="@drawable/qq"
+                    />
+                <TextView
+                    style="@style/common_wrap"
+                    android:textSize="@dimen/activity_textsize_14"
+                    android:textColor="@color/common_black"
+                    android:text="@string/pop_share_menu_qq"
+                    android:layout_marginTop="@dimen/activity_margin_12"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pop_share_zone"
+                style="@style/common_wrap"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_margin_54"
+                    android:layout_height="@dimen/activity_margin_54"
+                    android:src="@drawable/qqspace"
+                    />
+                <TextView
+                    style="@style/common_wrap"
+                    android:textSize="@dimen/activity_textsize_14"
+                    android:textColor="@color/common_black"
+                    android:text="@string/pop_share_menu_qq_zone"
+                    android:layout_marginTop="@dimen/activity_margin_12"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pop_share_wechat"
+                style="@style/common_wrap"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_margin_54"
+                    android:layout_height="@dimen/activity_margin_54"
+                    android:src="@drawable/wechat"
+                    />
+                <TextView
+                    style="@style/common_wrap"
+                    android:textSize="@dimen/activity_textsize_14"
+                    android:textColor="@color/common_black"
+                    android:text="@string/pop_share_menu_wechat"
+                    android:layout_marginTop="@dimen/activity_margin_12"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/common_match_wrap"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_margin_25"
+            >
+
+            <LinearLayout
+                android:id="@+id/pop_share_wechat_friends"
+                style="@style/common_wrap"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_margin_54"
+                    android:layout_height="@dimen/activity_margin_54"
+                    android:src="@drawable/friends"
+                    />
+                <TextView
+                    style="@style/common_wrap"
+                    android:textSize="@dimen/activity_textsize_14"
+                    android:textColor="@color/common_black"
+                    android:text="@string/pop_share_menu_wechat_"
+                    android:layout_marginTop="@dimen/activity_margin_12"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pop_share_weibo"
+                style="@style/common_wrap"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_margin_54"
+                    android:layout_height="@dimen/activity_margin_54"
+                    android:src="@drawable/sina"
+                    />
+                <TextView
+                    style="@style/common_wrap"
+                    android:textSize="@dimen/activity_textsize_14"
+                    android:textColor="@color/common_black"
+                    android:text="@string/pop_share_menu_weibo"
+                    android:layout_marginTop="@dimen/activity_margin_12"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pop_share_copy"
+                style="@style/common_wrap"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_margin_54"
+                    android:layout_height="@dimen/activity_margin_54"
+                    android:src="@drawable/webview_muen_copy"
+                    />
+                <TextView
+                    style="@style/common_wrap"
+                    android:textSize="@dimen/activity_textsize_14"
+                    android:textColor="@color/common_black"
+                    android:text="@string/pop_share_menu_copy_link"
+                    android:layout_marginTop="@dimen/activity_margin_12"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pop_share_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_49"
+            android:layout_marginTop="@dimen/activity_margin_25"
+            android:background="@color/common_white"
+            android:text="@string/dialog_init_cancel"
+            android:textColor="@color/mine_common_textview"
+            android:textSize="@dimen/activity_textsize_15"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_100"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_logo"
+            />
+        <TextView
+            style="@style/common_wrap"
+            android:textColor="@color/login_title"
+            android:text="@string/app_name"
+            android:layout_marginTop="@dimen/activity_margin_15"
+            android:textSize="@dimen/activity_textsize_20"
+            />
+        <TextView
+            style="@style/common_wrap"
+            android:textColor="@color/login_cutline"
+            android:text="@string/version"
+            android:layout_marginTop="@dimen/activity_margin_15"
+            android:textSize="@dimen/activity_textsize_20"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_clear"
+        android:layout_marginTop="@dimen/activity_margin_20"
+        style="@style/mine_layout_common"
+        >
+
+        <TextView
+            style="@style/mine_common_textview"
+            android:text="@string/setting_clear"
+            />
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            style="@style/mine_common_cutline"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/setting_opinion"
+        style="@style/mine_layout_common"
+        >
+
+        <TextView
+            style="@style/mine_common_textview"
+            android:text="@string/setting_opinion"
+            />
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            style="@style/mine_common_cutline"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/setting_about"
+        style="@style/mine_layout_common"
+        >
+
+        <TextView
+            style="@style/mine_common_textview"
+            android:text="@string/setting_about"
+            />
+        <ImageView
+            style="@style/common_wrap"
+            android:src="@drawable/ico_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            style="@style/mine_common_cutline"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/log_out"
+        style="@style/common_wrap"
+        android:background="@drawable/ico_logout_act"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        />
+
+</LinearLayout>

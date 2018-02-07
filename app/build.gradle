@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.emao.application"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0001"
+
+        ndk{
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+
+    }
+
+//    useLibrary 'org.apache.http.legacy'
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            signingConfig signingConfigs.debug
+            debuggable true
+            zipAlignEnabled false
+        }
+    }
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:26.0.0'
+    implementation 'com.android.support:design:26.0.0'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.1.6'
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.0.1'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    implementation 'com.android.support:recyclerview-v7:26.0.0'
+    implementation 'com.android.support:cardview-v7:26.0.0'
+    implementation 'com.facebook.fresco:fresco:0.12.0'
+    implementation 'com.facebook.fresco:animated-gif:0.12.0'
+    //    implementation 'cn.jzvd:jiaozivideoplayer:6.2.3'
+    implementation files('libs/alipaySdk-20170922.jar')
+    implementation project(':cutimagelib')
+    implementation 'com.sina.weibo.sdk:core:2.0.3:openDefaultRelease@aar'
+    implementation files('libs/open_sdk_r5923_lite.jar')
+    implementation project(':jiaozivideoplayer')
+    implementation project(':SmallVideoLib2')
+}

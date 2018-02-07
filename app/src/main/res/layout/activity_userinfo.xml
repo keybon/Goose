@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/common_match_match"
+    android:background="@color/common_white"
+    >
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/userinfo_activity_refresh"
+        style="@style/common_match_match"
+        android:descendantFocusability="blocksDescendants"
+        app:srlEnablePreviewInEditMode="true">
+
+        <com.emao.application.ui.view.MyScorllView
+            style="@style/common_match_match"
+            android:fillViewport="true">
+
+            <RelativeLayout style="@style/common_match_match">
+
+                <LinearLayout
+                    style="@style/common_match_match"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/item_portrait_area" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/userinfo_activity_recyclerview"
+                        style="@style/common_match_match"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:scrollbars="none"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </com.emao.application.ui.view.MyScorllView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        style="@style/common_match_wrap"
+        android:background="@color/bottom_btn"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/userinfo_activity_bottom_btn"
+            layout="@layout/item_userinfo_bottom_btn" />
+        <include
+            android:id="@+id/userinfo_activity_bottom_send"
+            layout="@layout/layout_singchat_bottom"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

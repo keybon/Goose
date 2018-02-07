@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/comment_hint"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:textColor="@color/login_edit_text"
+        android:textSize="@dimen/activity_textsize_16"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/activity_margin_15"
+        android:text="你还没有发表评论哦～"
+        />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/comment_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/comment_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/content_details_user_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_180"
+        style="@style/main_simple_bg"
+        android:visibility="visible"
+        />
+
+
+</LinearLayout>

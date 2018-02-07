@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.emao.application.ui.view.MyScorllView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        style="@style/common_match_match"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/common_match_wrap"
+            android:background="@color/common_white"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_margin_40"
+                android:layout_marginLeft="@dimen/activity_margin_21"
+                android:layout_marginRight="@dimen/activity_margin_21"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabIndicatorHeight="@dimen/activity_margin_2"
+                app:tabMode="fixed"
+                app:tabTextAppearance="@style/tablayout_text"
+                app:tabSelectedTextColor="@color/mine_common_textview"
+                app:tabTextColor="@color/mine_common_textview" />
+        </LinearLayout>
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/convenientBanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_margin_150"
+            />
+
+        <com.emao.application.ui.view.CustomViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/viewPager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+    </LinearLayout>
+
+</com.emao.application.ui.view.MyScorllView>

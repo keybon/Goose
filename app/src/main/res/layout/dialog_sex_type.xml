@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/shape_dialog_common"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/common_wrap"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/dialog_set_hint"
+            android:textColor="@color/common_black"
+            android:gravity="center"
+            android:textSize="16sp" />
+        <RadioGroup
+            android:id="@+id/sex_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/sex_btboy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_margin_20"
+                android:text="@string/dialog_sex_boy"/>
+            <RadioButton
+                android:id="@+id/sex_btgirl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_20"
+                android:text="@string/dialog_sex_girl"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5"/>
+
+    <LinearLayout
+        android:id="@+id/ll_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_45"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/ll_sure_cancel"
+            style="@style/common_wrap"
+            android:text="@string/dialog_init_cancel"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/dialog_btn_color"
+            android:visibility="gone"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/ll_sure_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="#E6E6E6"
+            />
+        <TextView
+            android:id="@+id/ll_sure_ok"
+            style="@style/common_wrap"
+            android:text="@string/dialog_init_ok"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/dialog_btn_color"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

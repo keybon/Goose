@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/common_alph_white">
+
+
+    <LinearLayout
+        style="@style/common_match_wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_margin_144"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/menu_compile_picture"
+            style="@style/common_wrap"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/activity_margin_40"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/common_wrap"
+                android:src="@drawable/ico_picture_act" />
+
+            <TextView
+                style="@style/common_wrap"
+                android:layout_marginTop="@dimen/activity_margin_15"
+                android:text="@string/main_pop_picture"
+                android:textColor="@color/login_edit_text"
+                android:textSize="@dimen/activity_textsize_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_compile_video"
+            style="@style/common_wrap"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="@dimen/activity_margin_40"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/common_wrap"
+                android:src="@drawable/ico_video_act" />
+
+            <TextView
+                style="@style/common_wrap"
+                android:layout_marginTop="@dimen/activity_margin_15"
+                android:text="@string/main_pop_video"
+                android:textColor="@color/login_edit_text"
+                android:textSize="@dimen/activity_textsize_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/menu_compile_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_margin_30"
+        android:scaleType="center"
+        android:src="@drawable/ico_closeedit" />
+
+</RelativeLayout>

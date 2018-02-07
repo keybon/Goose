@@ -1,0 +1,353 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="GooseBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarSize">@dimen/action_bar_size</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="buttonStyle">@style/AppCompatTheme.Widget.Button</item>
+    </style>
+
+
+    <style name="AppCompatTheme.Main" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarSize">@dimen/action_bar_size</item>
+        <item name="buttonStyle">@style/AppCompatTheme.Widget.Button</item>
+    </style>
+
+    <style name="bottomdialog" parent="AlertDialog.AppCompat">
+
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+        <item name="android:borderlessButtonStyle">@color/transparent</item>
+
+    </style>
+
+    <style name="AppCompatTheme.Widget.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textAllCaps">false</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="AppCompatTheme.ActionOverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <style name="AppCompatTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_launcher_background</item>
+    </style>
+
+
+    <style name="common_progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+
+    <!--            公共标题返回                                  -->
+    <style name="common_layout_back_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ico_back</item>
+    </style>
+    <!--  公共自适应宽高样式  -->
+    <style name="common_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--  公共自适应宽match高wrap样式  -->
+    <style name="common_match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--  公共自适应宽wrap高match样式  -->
+    <style name="common_wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--  公共宽高match样式  -->
+    <style name="common_match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--                公共标题文字                            -->
+    <style name="common_layout_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/login_title</item>
+        <item name="android:textSize">@dimen/activity_textsize_18</item>
+        <item name="android:typeface">serif</item>
+    </style>
+    <style name="actionbar_text_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/actionbar_text_right</item>
+        <item name="android:textSize">@dimen/activity_textsize_16</item>
+    </style>
+    <!-- 公共分割线 -->
+    <style name="common_layout_cutline">
+        <item name="android:layout_height">@dimen/activity_margin_0.5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/login_cutline</item>
+    </style>
+
+    <!-- 手机号登录输入框样式 -->
+    <style name="Login_Mobile_EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">@color/login_edit_text</item>
+        <item name="android:textColorHint">@color/login_edit_hint_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="main_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/login_edit_text</item>
+        <item name="android:textSize">@dimen/activity_textsize_15</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--  手机号登录textview样式  -->
+
+    <style name="Login_Mobile_TextView">
+        <item name="android:layout_width">@dimen/activity_margin_60</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:textSize">@dimen/activity_textsize_14</item>
+    </style>
+
+    <!--  手机号登录img样式  -->
+
+    <style name="Login_Mobile_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/activity_margin_15</item>
+    </style>
+
+    <style name="mine_username_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:textSize">@dimen/activity_textsize_17</item>
+    </style>
+
+    <style name="mine_signature">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/mine_signature</item>
+        <item name="android:textSize">@dimen/activity_textsize_13</item>
+    </style>
+
+    <style name="mine_layout_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/activity_margin_48</item>
+        <item name="android:paddingLeft">@dimen/activity_margin_15</item>
+        <item name="android:paddingRight">@dimen/activity_margin_15</item>
+        <item name="android:background">@color/common_white</item>
+    </style>
+
+    <style name="mine_common_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/mine_common_textview</item>
+        <item name="android:textSize">@dimen/activity_textsize_15</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/activity_margin_15</item>
+    </style>
+
+    <style name="mine_common_cutline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/activity_margin_0.5</item>
+        <item name="android:background">@color/login_cutline</item>
+    </style>
+
+    <style name="mine_dialog_camera_cutline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/activity_margin_0.5</item>
+        <item name="android:background">@color/launcher_text</item>
+    </style>
+    
+    <style name="simple_common_view_boder">
+
+
+        <!--【属性说明】由进度条和占位符图片渐变过渡到加载完成的图片所使用的时间间隔 -->
+        <item name="fadeDuration">300</item>
+        <!--【属性说明】加载完成的图片的缩放样式 -->
+        <item name="actualImageScaleType">focusCrop</item>
+        <!--【属性说明】占位符图片（下载成功之前显示的图片）-->
+        <item name="placeholderImage">@drawable/ico_logo</item>
+        <item name="placeholderImageScaleType">fitCenter</item>
+        <!--【属性说明】加载失败的时候显示的图片 -->
+        <item name="failureImage">@drawable/ic_launcher</item>
+        <!--【属性说明】加载失败的图片的缩放样式 -->
+        <item name="failureImageScaleType">centerInside</item>
+        <!--属性说明】加载失败,提示用户点击重新加载的图片(会覆盖failureImage的图片) -->
+        <!--<item name="fresco:retryImage">@drawable/retrying</item>-->
+        <!--<item name="fresco:retryImageScaleType">centerCrop</item>-->
+        <!--【属性说明】旋转进度条所使用的图片-->
+        <!--<item name="fresco:progressBarImage">@drawable/progress_bar</item>-->
+        <!--<item name="fresco:progressBarImageScaleType">centerInside</item>-->
+        <!--旋转进度条旋转1圈所需要的时间-->
+        <!--<item name="fresco:progressBarAutoRotateInterval">1000</item>-->
+        <!--背景色-->
+        <item name="backgroundImage">@color/login_mobile_button</item>
+        <!--覆盖在加载完成后图片上的叠加图片-->
+        <!--<item name="fresco:overlayImage">@drawable/watermark</item>-->
+        <!--按压状态下的叠加图片-->
+        <!--<item name="fresco:pressedStateOverlayImage">@color/red</item>-->
+        <!--【属性说明】是不是设置圆圈 -->
+        <item name="roundAsCircle">true</item>
+        <!--【属性说明】圆角角度,180的时候会变成圆形图片 -->
+        <!--<item name="roundedCornerRadius">1dp</item>-->
+        <!--<item name="roundTopLeft">true</item>-->
+        <!--<item name="roundTopRight">false</item>-->
+        <!--<item name="roundBottomLeft">false</item>-->
+        <!--<item name="roundBottomRight">true</item>-->
+        <!--圆角或圆形图叠加的颜色，只能是颜色-->
+        <!--<item name="fresco:roundWithOverlayColor">@color/corner_color</item>-->
+        <!--圆角或圆形图边框的宽度-->
+        <item name="roundingBorderWidth">@dimen/activity_margin_2</item>
+        <!--圆角或圆形图边框的颜色-->
+        <item name="roundingBorderColor">@color/common_white</item>
+        <!--设置宽高比-->
+        <!--<item name="viewAspectRatio"></item>-->
+
+    </style>
+
+    <!--                主页图片                     -->
+
+    <style name="main_simple_bg">
+
+
+        <!--【属性说明】由进度条和占位符图片渐变过渡到加载完成的图片所使用的时间间隔 -->
+        <item name="fadeDuration">300</item>
+        <!--【属性说明】加载完成的图片的缩放样式 -->
+        <item name="actualImageScaleType">focusCrop</item>
+        <!--【属性说明】占位符图片（下载成功之前显示的图片）-->
+        <item name="placeholderImage">@color/login_text_color</item>
+        <item name="placeholderImageScaleType">fitCenter</item>
+        <!--【属性说明】加载失败的时候显示的图片 -->
+        <item name="failureImage">@color/login_text_color</item>
+        <!--【属性说明】加载失败的图片的缩放样式 -->
+        <item name="failureImageScaleType">centerInside</item>
+        <!--属性说明】加载失败,提示用户点击重新加载的图片(会覆盖failureImage的图片) -->
+        <!--<item name="fresco:retryImage">@drawable/retrying</item>-->
+        <!--<item name="fresco:retryImageScaleType">centerCrop</item>-->
+        <item name="roundAsCircle">false</item>
+
+    </style>
+
+
+    <style name="simple_common_view">
+
+
+        <!--【属性说明】由进度条和占位符图片渐变过渡到加载完成的图片所使用的时间间隔 -->
+        <item name="fadeDuration">300</item>
+        <!--【属性说明】加载完成的图片的缩放样式 -->
+        <item name="actualImageScaleType">focusCrop</item>
+        <!--【属性说明】占位符图片（下载成功之前显示的图片）-->
+        <item name="placeholderImage">@drawable/ico_logo</item>
+        <item name="placeholderImageScaleType">fitCenter</item>
+        <!--【属性说明】加载失败的时候显示的图片 -->
+        <item name="failureImage">@drawable/ic_launcher</item>
+        <!--【属性说明】加载失败的图片的缩放样式 -->
+        <item name="failureImageScaleType">centerInside</item>
+        <!--属性说明】加载失败,提示用户点击重新加载的图片(会覆盖failureImage的图片) -->
+        <!--<item name="fresco:retryImage">@drawable/retrying</item>-->
+        <!--<item name="fresco:retryImageScaleType">centerCrop</item>-->
+        <!--【属性说明】旋转进度条所使用的图片-->
+        <!--<item name="fresco:progressBarImage">@drawable/progress_bar</item>-->
+        <!--<item name="fresco:progressBarImageScaleType">centerInside</item>-->
+        <!--旋转进度条旋转1圈所需要的时间-->
+        <!--<item name="fresco:progressBarAutoRotateInterval">1000</item>-->
+        <!--背景色-->
+        <item name="backgroundImage">@color/login_mobile_button</item>
+        <!--覆盖在加载完成后图片上的叠加图片-->
+        <!--<item name="fresco:overlayImage">@drawable/watermark</item>-->
+        <!--按压状态下的叠加图片-->
+        <!--<item name="fresco:pressedStateOverlayImage">@color/red</item>-->
+        <!--【属性说明】是不是设置圆圈 -->
+        <item name="roundAsCircle">true</item>
+        <!--【属性说明】圆角角度,180的时候会变成圆形图片 -->
+        <!--<item name="roundedCornerRadius">1dp</item>-->
+        <!--<item name="roundTopLeft">true</item>-->
+        <!--<item name="roundTopRight">false</item>-->
+        <!--<item name="roundBottomLeft">false</item>-->
+        <!--<item name="roundBottomRight">true</item>-->
+        <!--圆角或圆形图叠加的颜色，只能是颜色-->
+        <!--<item name="fresco:roundWithOverlayColor">@color/corner_color</item>-->
+        <!--圆角或圆形图边框的宽度-->
+        <!--<item name="roundingBorderWidth">@dimen/activity_margin_2</item>-->
+        <!--圆角或圆形图边框的颜色-->
+        <!--<item name="roundingBorderColor">@color/login_mobile_button</item>-->
+        <!--设置宽高比-->
+        <!--<item name="viewAspectRatio"></item>-->
+
+    </style>
+
+
+    <!--        pop弹出动画           -->
+    <style name="main_pop_anim">
+        
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+
+    </style>
+
+    <style name="pop_admire_money_bt">
+
+        <item name="android:layout_width">@dimen/activity_margin_66</item>
+        <item name="android:layout_height">@dimen/activity_margin_33</item>
+        <item name="android:background">@drawable/selector_coner_yellow</item>
+        <item name="android:textColor">@color/common_black</item>
+        <item name="android:textSize">@dimen/activity_textsize_14</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+
+    </style>
+
+    <style name="chat_text_date_style">
+        <item name="android:padding">@dimen/activity_margin_5</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:textSize">@dimen/activity_textsize_12</item>
+        <item name="android:background">@drawable/message_time_background</item>
+    </style>
+
+    <style name="tablayout_text" parent="android:TextAppearance.Small">
+        <!--TAB文字样式-->
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+
+
+
+    <style name="AppNoBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+</resources>

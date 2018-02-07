@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">鹅毛</string>
+    <string name="version">版本1.0</string>
+
+
+    <string name="common_layout_right">提交</string>
+    <string name="launcher_mid_hint">微打赏，送礼物就是这么简单</string>
+    <string name="launcher_bottom_hint">鹅毛 - 版权所有</string>
+    <string name="launcher_bottom_hint_">\@2017 - 永久</string>
+    <string name="login_mid_hint">选择登录方式</string>
+    <string name="login_mobile">手机号</string>
+    <string name="login_wechat">微信</string>
+    <string name="login_verifycode">验证码</string>
+    <string name="login_mobile_send_verifycode">发送验证码</string>
+    <string name="login_mobile_button">登录</string>
+    <string name="login_sucess">登录成功</string>
+    <string name="login_failed">登录失败</string>
+    <string name="login_wechat_hint">绑定微信用户打赏、领红包哦</string>
+    <string name="wechat_login_word">用户未安装微信</string>
+    <string name="mine_signature">个人签名：</string>
+    <string name="mine_comment">我的评论</string>
+    <string name="mine_send_admire">送出的赞赏</string>
+    <string name="mine_reap_admire">收到的赞赏</string>
+    <string name="mine_setting">设置</string>
+    <string name="mine_setting_collection">收款方式</string>
+    <string name="setting_clear">清楚缓存</string>
+    <string name="setting_opinion">意见反馈</string>
+    <string name="setting_about">关于鹅毛</string>
+    <string name="userinfo_setting_portrait">头像</string>
+    <string name="userinfo_setting_nickname">昵称</string>
+    <string name="userinfo_setting_portrait_t">头像</string>
+    <string name="userinfo_setting_sex">性别</string>
+    <string name="userinfo_setting_userid">用户ID</string>
+    <string name="userinfo_setting_mobile">绑定手机</string>
+    <string name="userinfo_setting_home_page">我的主页</string>
+    <string name="userinfo_setting_signature">个人签名</string>
+    <string name="userinfo_no_setting">未设置</string>
+    <string name="opinion_hint">您的批评和建议能帮助我们更好的完善产品，请留下您的宝贵的意见！</string>
+    <string name="opinion_init_text">%1$d/150</string>
+    <string name="picture_init_text">%1$d/500</string>
+    <string name="myinfo_signature">%1$d/50</string>
+    <string name="admire_send_text">共送出%1$d元</string>
+    <string name="admire_reap_text">共收到%1$d元</string>
+    <string name="admire_money_count">元</string>
+    <string name="main_pop_picture">照片</string>
+    <string name="main_pop_video">视频</string>
+    <string name="picture_content">内容</string>
+    <string name="picture_edit_hint">请填写您的愿望（最多500字）</string>
+    <string name="picture_release_title">发布内容</string>
+    <string name="template_item_tv">新年红包</string>
+    <string name="template_pop_title">选择模版</string>
+    <string name="photo_max_limit">最多选择%1$d张图片</string>
+    <string name="photo_send_tv">发送</string>
+    <string name="photo_send_num">发送(%1$d/%2$d)</string>
+    <string name="photo_btn_preview">预览</string>
+    <string name="photo_btn_preview_num">预览(%1$d)</string>
+    <string name="default_pic_over_20MB">单张图片大小超过限制</string>
+    <string name="myinfo_signture">个人签名</string>
+    <string name="network_hint">获取网络失败，请检查网络</string>
+    <string name="webview_network_error">网络错误!</string>
+
+
+    <string name="text_num_above">您已经超过字数，不可填写</string>
+    <string name="dialog_init_content">确定退出此次编辑？</string>
+    <string name="dialog_right_sure">确定</string>
+    <string name="dialog_init_ok">退出</string>
+    <string name="dialog_init_cancel">取消</string>
+    <string name="dialog_nickname_edit">请输入昵称</string>
+    <string name="dialog_nickname_hint">取个喜欢的名字\n做一个不一样的范儿主～</string>
+    <string name="dialog_nickname_left">暂不修改</string>
+    <string name="dialog_nickname_right">保存</string>
+    <string name="dialog_set_hint">哈尼，性别设置了就不能改喽！</string>
+    <string name="dialog_sex_boy">男</string>
+    <string name="dialog_sex_girl">女</string>
+    <string name="dialog_classify_1">分类1</string>
+    <string name="dialog_classify_2">分类2</string>
+    <string name="dialog_classify_3">分类3</string>
+    <string name="dialog_classify_4">分类4</string>
+    <string name="dialog_classify_5">分类5</string>
+    <string name="dialog_collection_alipay">支付宝</string>
+    <string name="dialog_collection_wechat">微信</string>
+    <string name="logout_clear">确定要清除缓存吗？</string>
+    <string name="logout_hint">确定要退出吗？</string>
+    <string name="pop_protrait_title">更换头像</string>
+    <string name="pop_protrait_camera">拍照</string>
+    <string name="pop_protrait_photo">从相册选取</string>
+    <string name="pop_admire_hint">爱赞赏的人脾气不会太差哦～</string>
+    <string name="pop_admire_money_1">2元</string>
+    <string name="pop_admire_money_2">5元</string>
+    <string name="pop_admire_money_3">10元</string>
+    <string name="pop_admire_money_4">20元</string>
+    <string name="pop_admire_money_5">50元</string>
+    <string name="pop_admire_money_6">100元</string>
+    <string name="pop_admire_money_">其他金额</string>
+    <string name="pop_admire_bt">立即打赏</string>
+    <string name="pop_admire_money_hint">请输入打赏金额或点击金额按钮！</string>
+    <string name="pop_share_menu_title">分享到：</string>
+    <string name="pop_share_menu_qq">QQ</string>
+    <string name="pop_share_menu_qq_zone">QQ空间</string>
+    <string name="pop_share_menu_wechat">微信好友</string>
+    <string name="pop_share_menu_wechat_">朋友圈</string>
+    <string name="pop_share_menu_weibo">微博</string>
+    <string name="pop_share_menu_copy_link">复制链接</string>
+
+
+    <string name="singchat_bottom_hint">评论</string>
+    <string name="singchat_bottom_send">发送</string>
+    <string name="content_details">内容详情</string>
+
+    <string name="table_item_recommend">推荐</string>
+    <string name="table_item_choicenss">精选</string>
+    <string name="table_item_live">直播</string>
+    <string name="table_item_focus">关注</string>
+    <string name="table_item_video">视频</string>
+    <string name="table_item_music">音乐</string>
+    <string name="table_item_focus_focus">关注</string>
+    <string name="table_item_dynamic">动态</string>
+    <string name="table_item_letter">私信</string>
+    <string name="table_item_no_message">暂无消息~</string>
+
+
+    <string name="userinfo_activity_fans">粉丝</string>
+    <string name="table_recommend_time">时间</string>
+    <string name="table_recommend_money">金额</string>
+    <string name="table_recommend_like">赞</string>
+    <string name="userinfo_bottom_report">举报</string>
+
+    <string name="emao_info">鹅毛是一款社交圈的愿望工具，当你有任何需求的时候，可以发起并分享你的愿望，亲朋好友帮你一起实现愿望。千里送emao，礼轻情意重。</string>
+
+
+
+
+    <string name="mobile_title">手机号登录</string>
+    <string name="wechat_title">绑定微信</string>
+    <string name="actionbar_message">首页</string>
+    <string name="actionbar_focus">关注</string>
+    <string name="actionbar_mine">我的</string>
+
+    <item name="tag_key_data" type="id"/>
+    <item name="tag_key_position" type="id"/>
+
+
+
+    <string name="permission_external_storage">在设置-应用-鹅毛-权限中开启存储空间权限，以正常使用工银融e联功能。</string>
+    <string name="permission_phone_state">鹅毛使用电话权限确定本机号码和设备ID，以保证账号登录的安全性。鹅毛不会拨打其他号码或终止通话。\n请在设置-应用-工银融e联-权限中开启电话权限，以正常登录工银融e联。</string>
+    <string name="permission_location">在设置-应用-鹅毛-权限中开启位置信息权限，以正常使用位置共享等功能。</string>
+    <string name="permission_camera">在设置-应用-鹅毛-权限中开启相机权限，以正常使用拍照、扫一扫等功能。</string>
+    <string name="permission_record_audio">在设置-应用-鹅毛-权限中开启麦克风权限，以正常使用语音功能。</string>
+    <string name="permission_read_contacts">在设置-应用-鹅毛-权限中开启读取联系人权限，以正常使用手机联系人功能。</string>
+
+</resources>
