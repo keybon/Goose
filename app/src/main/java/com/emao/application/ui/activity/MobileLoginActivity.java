@@ -17,11 +17,14 @@ import com.emao.application.ui.callback.CountDownCallBack;
 import com.emao.application.ui.utils.Constants;
 import com.emao.application.ui.utils.GsonUtils;
 import com.emao.application.ui.utils.LogUtils;
+import com.emao.application.ui.utils.SharedPreUtils;
 import com.emao.application.ui.utils.ToastUtils;
 import com.emao.application.ui.view.ClearableEditText;
 import com.emao.application.ui.view.MyCount;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
+
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -38,6 +41,8 @@ public class MobileLoginActivity extends BaseLoginActivity implements View.OnCli
     public static final String MOBILE_TITLE = "MOBILE_TITLE";
     public static final String FROM = "from";
 
+    public static String mobiel = "";
+
     private ClearableEditText phoneNum;
     private ClearableEditText verifycodeEt;
     private TextView mobile_verifycode_btn;
@@ -52,6 +57,7 @@ public class MobileLoginActivity extends BaseLoginActivity implements View.OnCli
 
     private IWXAPI wechatApi;
     private String from;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -187,26 +193,38 @@ public class MobileLoginActivity extends BaseLoginActivity implements View.OnCli
             @Override
             public void requestSuccess(String result) throws Exception {
                 LogUtils.e("手机登录成功 = "+result);
-                HashMap<String,String> map = GsonUtils.getMapParams(result);
-                if(Constants.ERROR_CODE_200.equals(map.get("error"))){
+                JSONObject jsonObject = new JSONObject(result);
+                if(Constants.ERROR_CODE_200.equals(jsonObject.getString("error"))){
                     verifycodeEt.setText("");
-                    if("userinfosetting".equals(from)){
+                    String data = jsonObject.getString("data");
+                    if(!TextUtils.isEmpty(data)){
+
+                        JSONObject userData = new JSONObject(data);
+
+                        SharedPreUtils.put(SharedPreUtils.SP_OPENID,userData.getString("openid"));
+                        SharedPreUtils.put(SharedPreUtils.SP_USERID,userData.getString("id"));
+                        SharedPreUtils.put(SharedPreUtils.SP_NICKNAME,userData.getString("username"));
+                        SharedPreUtils.put(SharedPreUtils.SP_SEX,userData.getString("sex"));
+                        SharedPreUtils.put(SharedPreUtils.SP_HEADIMGURL,userData.getString("headimgurl"));
+                        SharedPreUtils.put(SharedPreUtils.SP_SIGNATURE,userData.getString("signature"));
+                        SharedPreUtils.put(SharedPreUtils.SP_MOBILE,userData.getString("mobile"));
+
+
+
                         Intent intent = new Intent();
-                        intent.putExtra("mobile",userName);
-                        setResult(UserInfoSetting.REQUEST_BIND_MOBILE,intent);
+                        intent.setClass(MobileLoginActivity.this,MainActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
                         finish();
+
+
+
                     } else {
-//                        if (wechatApi != null && wechatApi.isWXAppInstalled()) {
-//                            final SendAuth.Req req = new SendAuth.Req();
-//                            req.scope = "snsapi_userinfo";
-//                            req.state = "emao_wx_login";
-//                            wechatApi.sendReq(req);
-//                        } else {
-//                            ToastUtils.showShortToast(baseActivity.getResources().getString(R.string.wechat_login_word));
-//                        }
+                        mobiel = userName;
                         startActivity(new Intent(MobileLoginActivity.this,WeChatLoginActivity.class));
                         myCount.cancel();
                         myCount.onFinish();
+
                     }
                 }
             }

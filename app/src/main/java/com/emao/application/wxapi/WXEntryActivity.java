@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import com.emao.application.R;
 import com.emao.application.http.OkHttpManager;
 import com.emao.application.ui.activity.MainActivity;
+import com.emao.application.ui.activity.MobileLoginActivity;
 import com.emao.application.ui.application.MainApp;
 import com.emao.application.ui.utils.CommonUtils;
 import com.emao.application.ui.utils.Constants;
@@ -192,6 +193,10 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
         params.put("sex",sex);
         params.put("headimgurl",headimgurl);
         params.put("unionid",unionid);
+        if(MobileLoginActivity.mobiel == null){
+            MobileLoginActivity.mobiel = "";
+        }
+        params.put("mobile", MobileLoginActivity.mobiel);
         OkHttpManager.getInstance().nomalPostAsync(Constants.GOOSE_URL_WECHAT_LOGIN, params, new OkHttpManager.DataCallBack() {
             @Override
             public void requestSuccess(String result) throws Exception {

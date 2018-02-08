@@ -227,6 +227,7 @@ public class MenuMessageFragment extends BaseFragment implements OnItemClickList
         super.onMessageRefreshData(refreshlayout);
         if(fragments.size() != 0){
             fragments.get(mViewPager.getCurrentItem()).onRefreshData(refreshlayout);
+            mViewPager.invalidate();
         } else {
             refreshlayout.finishRefresh(1000);
         }
