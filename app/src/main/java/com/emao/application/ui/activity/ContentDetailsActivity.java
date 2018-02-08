@@ -57,8 +57,6 @@ import com.emao.application.ui.utils.ToastUtils;
 import com.emao.application.ui.view.GooseGridView;
 import com.emao.application.ui.view.ShowPopWinFactor;
 import com.facebook.drawee.view.SimpleDraweeView;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.sina.weibo.sdk.WbSdk;
 import com.sina.weibo.sdk.api.TextObject;
 import com.sina.weibo.sdk.api.WeiboMultiMessage;
@@ -72,7 +70,6 @@ import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
 
 import java.io.IOException;
-import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -750,24 +747,24 @@ public class ContentDetailsActivity extends BaseActivity implements View.OnClick
      * 支付选择框
      */
     public void showPayStylePop(final String str){
-        if(popupWindow == null){
-            popupWindow = new ShowPopWinFactor(this);
-        }
-        popupWindow.showSelectorCollection(new OnPayCallBackListener() {
-            @Override
-            public void onClickPay(View v, String paystyle) {
+//        if(popupWindow == null){
+//            popupWindow = new ShowPopWinFactor(this);
+//        }
+//        popupWindow.showSelectorCollection(new OnPayCallBackListener() {
+//            @Override
+//            public void onClickPay(View v, String paystyle) {
 
-                rewardService(str,paystyle);
-
-                disPopWindow();
-            }
-
-            @Override
-            public void onClickClose(View v, String str) {
-                disPopWindow();
-            }
-        });
-        popupWindow.showAtLocation(this.getWindow().getDecorView(), Gravity.CENTER, 0, 0);
+                rewardService(str,"1");
+//
+//                disPopWindow();
+//            }
+//
+//            @Override
+//            public void onClickClose(View v, String str) {
+//                disPopWindow();
+//            }
+//        });
+//        popupWindow.showAtLocation(this.getWindow().getDecorView(), Gravity.CENTER, 0, 0);
     }
 
     /**
@@ -1089,19 +1086,7 @@ public class ContentDetailsActivity extends BaseActivity implements View.OnClick
      */
     public void CopyUrlToClipboard(String copyUrl) {
         ClipboardManager clip = (ClipboardManager) this.getSystemService(Context.CLIPBOARD_SERVICE);
-        if (!TextUtils.isEmpty(copyUrl)) {
-            try {
-                String url = URLDecoder.decode(copyUrl, "UTF-8");
-                String jsonString = url.substring(url.indexOf('?') + 1);
-                Map<String, String> map = new Gson().fromJson(jsonString, new TypeToken<HashMap<String, String>>() {
-                }.getType());
-                String link = map.get("produrl");
-                // 复制
-                clip.setText(link);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
+        clip.setText(copyUrl);
         ToastUtils.showLongToast("复制成功");
         disPopWindow();
     }
@@ -1113,13 +1098,13 @@ public class ContentDetailsActivity extends BaseActivity implements View.OnClick
     @Override
     public void onComplete(Object o) {
 
-        ToastUtils.showShortToast(o.toString());
+        ToastUtils.showShortToast("分享成功");
 
     }
 
     @Override
     public void onError(UiError uiError) {
-        ToastUtils.showShortToast("errorDetail = " + uiError.errorDetail + "  errorMessage = " + uiError.errorMessage);
+        LogUtils.e("errorDetail = " + uiError.errorDetail + "  errorMessage = " + uiError.errorMessage);
     }
 
     @Override

@@ -29,6 +29,7 @@ import com.emao.application.ui.fragment.MenuMessageFragment;
 import com.emao.application.ui.fragment.MenuMineFragment;
 import com.emao.application.ui.utils.CommonUtils;
 import com.emao.application.ui.utils.LogUtils;
+import com.emao.application.ui.utils.SharedPreUtils;
 import com.emao.application.ui.utils.ToastUtils;
 import com.emao.application.ui.view.ShowPopWinFactor;
 import com.mabeijianxi.smallvideorecord2.MediaRecorderActivity;
@@ -93,7 +94,7 @@ public class MainActivity extends BaseActivity implements OnLoadmoreListener,OnR
     @Override
     public void initView(){
 
-//        SharedPreUtils.put(SharedPreUtils.SP_USERID,"17");
+        SharedPreUtils.put(SharedPreUtils.SP_USERID,"17");
         baseActivity = this;
 
         mFragmentManager = getSupportFragmentManager();

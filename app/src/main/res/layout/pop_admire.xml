@@ -152,7 +152,6 @@
                 android:layout_width="@dimen/activity_margin_66"
                 android:layout_height="@dimen/activity_margin_24"
                 android:layout_marginLeft="@dimen/activity_margin_5"
-                android:inputType="number"
                 android:background="@color/common_white" />
 
             <TextView

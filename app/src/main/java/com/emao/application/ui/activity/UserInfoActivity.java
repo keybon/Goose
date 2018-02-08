@@ -578,24 +578,24 @@ public class UserInfoActivity extends BaseLoginActivity implements View.OnClickL
      * 支付选择框
      */
     public void showPayStylePop(final int position, final String str){
-        if(popupWindow == null){
-            popupWindow = new ShowPopWinFactor(this);
-        }
-        popupWindow.showSelectorCollection(new OnPayCallBackListener() {
-            @Override
-            public void onClickPay(View v, String paystyle) {
+//        if(popupWindow == null){
+//            popupWindow = new ShowPopWinFactor(this);
+//        }
+//        popupWindow.showSelectorCollection(new OnPayCallBackListener() {
+//            @Override
+//            public void onClickPay(View v, String paystyle) {
 
-                rewardService(position,str,paystyle);
-
-                dismissReportPop();
-            }
-
-            @Override
-            public void onClickClose(View v, String str) {
-                dismissReportPop();
-            }
-        });
-        popupWindow.showAtLocation(this.getWindow().getDecorView(), Gravity.CENTER, 0, 0);
+                rewardService(position,str,"1");
+//
+//                dismissReportPop();
+//            }
+//
+//            @Override
+//            public void onClickClose(View v, String str) {
+//                dismissReportPop();
+//            }
+//        });
+//        popupWindow.showAtLocation(this.getWindow().getDecorView(), Gravity.CENTER, 0, 0);
     }
 
     /**

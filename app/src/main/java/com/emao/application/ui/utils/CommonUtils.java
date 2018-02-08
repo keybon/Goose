@@ -494,7 +494,7 @@ public class CommonUtils {
 
         ImageRequest request = ImageRequestBuilder.newBuilderWithSource(uri)
                 //根据View的尺寸放缩图片
-                .setResizeOptions(new ResizeOptions(CommonUtils.dip2px(mContext,50), CommonUtils.dip2px(mContext,50)))
+                .setResizeOptions(new ResizeOptions(CommonUtils.dip2px(mContext,70), CommonUtils.dip2px(mContext,70)))
                 .build();
 
         DraweeController controller = Fresco.newDraweeControllerBuilder()

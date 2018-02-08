@@ -235,24 +235,24 @@ public class FocusTableDynamicFragment extends BaseFragment implements OnRecycle
      * 支付选择框
      */
     public void showPayStylePop(final int position, final String str){
-        if(popupWindow == null){
-            popupWindow = new ShowPopWinFactor(getActivity());
-        }
-        popupWindow.showSelectorCollection(new OnPayCallBackListener() {
-            @Override
-            public void onClickPay(View v, String paystyle) {
+//        if(popupWindow == null){
+//            popupWindow = new ShowPopWinFactor(getActivity());
+//        }
+//        popupWindow.showSelectorCollection(new OnPayCallBackListener() {
+//            @Override
+//            public void onClickPay(View v, String paystyle) {
 
-                rewardService(position,str,paystyle);
+                rewardService(position,str,"1");
 
-                dismissPopWindow();
-            }
-
-            @Override
-            public void onClickClose(View v, String str) {
-                dismissPopWindow();
-            }
-        });
-        popupWindow.showAtLocation(activity.getWindow().getDecorView(), Gravity.CENTER, 0, 0);
+//                dismissPopWindow();
+//            }
+//
+//            @Override
+//            public void onClickClose(View v, String str) {
+//                dismissPopWindow();
+//            }
+//        });
+//        popupWindow.showAtLocation(activity.getWindow().getDecorView(), Gravity.CENTER, 0, 0);
     }
 
     /**

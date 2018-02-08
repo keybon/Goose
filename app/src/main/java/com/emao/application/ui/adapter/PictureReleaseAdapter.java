@@ -65,7 +65,7 @@ public class PictureReleaseAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 
             FrescoImageUtils.getInstance()
                     .createSdcardBuilder(drawableList.get(position))
-                    .setResizeOptions(200,200)
+                    .setResizeOptions(230,230)
 //                    .setFailDrawable(R.drawable.image_demaged)
                     .build()
                     .showSdcardImage(((PictureViewHolder) holder).adapter_picture_img);

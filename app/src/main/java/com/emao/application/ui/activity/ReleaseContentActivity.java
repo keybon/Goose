@@ -523,7 +523,6 @@ public class ReleaseContentActivity extends BaseActivity {
      */
     public void videoCommit(String cid){
 
-//        HashMap<String,String> params = new HashMap<>();
         HashMap<String,Object> params = new HashMap<>();
         params.put("uid", (String) SharedPreUtils.get(SharedPreUtils.SP_USERID,""));
         params.put("cid",cid);
@@ -533,14 +532,11 @@ public class ReleaseContentActivity extends BaseActivity {
         params.put("source","1");
         params.put("video",new File(videoPath));
 
-//        String url = "http://82.201.205.117/shiming/fileupload.ashx";
         OkHttpManager.getInstance().uploadAsync1(Constants.GOOSE_URL_CONTENT_PUBLISH, params, new OkHttpManager.DataCallBack() {
-//        OkHttpManager.getInstance().uploadAsync(Constants.GOOSE_URL_CONTENT_PUBLISH, new File(videoPath), params, new OkHttpManager.DataCallBack() {
             @Override
             public void requestSuccess(String result) throws Exception {
                 LogUtils.e("发表视频 "+result);
                 HashMap<String,String> map = GsonUtils.getMapParams(result);
-//                DialogFactory.hideLoading(ReleaseContentActivity.this);
                 DialogFactory.hideProgressDialog(ReleaseContentActivity.this);
                 if(Constants.ERROR_CODE_200.equals(map.get("error"))){
                     startActivity(new Intent(ReleaseContentActivity.this,MainActivity.class));
@@ -557,7 +553,6 @@ public class ReleaseContentActivity extends BaseActivity {
             public void requestFailure(Request request, IOException e) {
                 LogUtils.e("发表视频失败 "+request.toString());
                 DialogFactory.hideLoading(ReleaseContentActivity.this);
-                ToastUtils.showShortToast("发表视频失败");
             }
         });
     }

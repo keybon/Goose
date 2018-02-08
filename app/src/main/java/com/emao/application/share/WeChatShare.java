@@ -87,7 +87,7 @@ public class WeChatShare implements IShareInfo{
 
     @Override
     public void shareUrl(String url) {
-        shareUrl(url, "一个鹅毛的有趣故事～");
+        shareUrl(url, "鹅毛--千里送鹅毛，礼轻情意重");
     }
 
     public void shareUrl(String url, String title) {

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -213,10 +214,12 @@ public class MenuMessageFragment extends BaseFragment implements OnItemClickList
     @Override
     public void onItemClick(int position) {
         //banner
-        Intent intent = new Intent();
-        intent.setClass(getActivity(), WebViewActivity.class);
-        intent.putExtra(WebViewActivity.WEBVIEW_FROM_URL,bannerList.get(position).getUrl());
-        startActivity(intent);
+        if(!TextUtils.isEmpty(bannerList.get(position).getUrl())){
+            Intent intent = new Intent();
+            intent.setClass(getActivity(), WebViewActivity.class);
+            intent.putExtra(WebViewActivity.WEBVIEW_FROM_URL,bannerList.get(position).getUrl());
+            startActivity(intent);
+        }
     }
 
     @Override
