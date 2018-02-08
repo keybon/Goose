@@ -246,11 +246,11 @@ public class ShowPopWinFactor extends PopupWindow {
                 } else if(!TextUtils.isEmpty(pressMoney.getText().toString().trim())){
                     money = pressMoney.getText().toString().trim();
                     int count = Integer.parseInt(money);
-//                    if(count < 2){
-//                        ToastUtils.showShortToast("赞赏金额必须大于2元哦～");
-//                    } else {
+                    if(count < 2){
+                        ToastUtils.showShortToast("赞赏金额必须大于2元哦～");
+                    } else {
                         onPayCallBackListener.onClickPay(v,money);
-//                    }
+                    }
                 } else {
                     money = money.replace("元","");
                     int count = Integer.parseInt(money);

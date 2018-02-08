@@ -158,6 +158,7 @@
                 style="@style/common_wrap"
                 android:layout_marginLeft="@dimen/activity_margin_5"
                 android:text="@string/admire_money_count"
+                android:inputType="number"
                 android:textColor="@color/common_black"
                 android:textSize="@dimen/activity_margin_12" />
 
