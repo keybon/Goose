@@ -1013,7 +1013,7 @@ public class ContentDetailsActivity extends BaseActivity implements View.OnClick
         //这条分享消息被好友点击后的跳转URL。
         bundle.putString(QzoneShare.SHARE_TO_QQ_TARGET_URL, String.format(Constants.GOOSE_SHARE_URL, recommendBean.getId()));
         //分享的标题。注：PARAM_TITLE、PARAM_IMAGE_URL、PARAM_	SUMMARY不能全为空，最少必须有一个是有值的。
-        bundle.putString(QzoneShare.SHARE_TO_QQ_TITLE, "这是一个鹅毛的有趣故事～");
+        bundle.putString(QzoneShare.SHARE_TO_QQ_TITLE, "鹅毛--千里送鹅毛，礼轻情意重");
         //分享的图片URL
         bundle.putString(QzoneShare.SHARE_TO_QQ_IMAGE_URL,
                 "http://img3.cache.netease.com/photo/0005/2013-03-07/8PBKS8G400BV0005.jpg");
@@ -1035,7 +1035,7 @@ public class ContentDetailsActivity extends BaseActivity implements View.OnClick
         //这条分享消息被好友点击后的跳转URL。
         params.putString(QzoneShare.SHARE_TO_QQ_TARGET_URL, String.format(Constants.GOOSE_SHARE_URL, recommendBean.getId()));
         //分享的标题。注：PARAM_TITLE、PARAM_IMAGE_URL、PARAM_	SUMMARY不能全为空，最少必须有一个是有值的。
-        params.putString(QzoneShare.SHARE_TO_QQ_TITLE, "这是一个鹅毛的有趣故事～");
+        params.putString(QzoneShare.SHARE_TO_QQ_TITLE, "鹅毛--千里送鹅毛，礼轻情意重");
         //分享的图片URL
         params.putString(QzoneShare.SHARE_TO_QQ_IMAGE_URL,
                 Constants.uri2);
@@ -1072,7 +1072,7 @@ public class ContentDetailsActivity extends BaseActivity implements View.OnClick
     private TextObject getTextObj() {
         TextObject textObject = new TextObject();
         textObject.text = getSharedText();
-        textObject.title = "这是一个鹅毛的有趣故事～";
+        textObject.title = "鹅毛--千里送鹅毛，礼轻情意重";
         textObject.actionUrl = getSharedText();
         return textObject;
     }

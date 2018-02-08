@@ -193,10 +193,10 @@
         <!--【属性说明】加载完成的图片的缩放样式 -->
         <item name="actualImageScaleType">focusCrop</item>
         <!--【属性说明】占位符图片（下载成功之前显示的图片）-->
-        <item name="placeholderImage">@drawable/ico_logo</item>
+        <item name="placeholderImage">@color/myinfo_cutline</item>
         <item name="placeholderImageScaleType">fitCenter</item>
         <!--【属性说明】加载失败的时候显示的图片 -->
-        <item name="failureImage">@drawable/ic_launcher</item>
+        <item name="failureImage">@color/banner_gray</item>
         <!--【属性说明】加载失败的图片的缩放样式 -->
         <item name="failureImageScaleType">centerInside</item>
         <!--属性说明】加载失败,提示用户点击重新加载的图片(会覆盖failureImage的图片) -->
@@ -264,10 +264,10 @@
         <!--【属性说明】加载完成的图片的缩放样式 -->
         <item name="actualImageScaleType">focusCrop</item>
         <!--【属性说明】占位符图片（下载成功之前显示的图片）-->
-        <item name="placeholderImage">@drawable/ico_logo</item>
+        <item name="placeholderImage">@color/myinfo_cutline</item>
         <item name="placeholderImageScaleType">fitCenter</item>
         <!--【属性说明】加载失败的时候显示的图片 -->
-        <item name="failureImage">@drawable/ic_launcher</item>
+        <item name="failureImage">@color/banner_gray</item>
         <!--【属性说明】加载失败的图片的缩放样式 -->
         <item name="failureImageScaleType">centerInside</item>
         <!--属性说明】加载失败,提示用户点击重新加载的图片(会覆盖failureImage的图片) -->
